@@ -1,5 +1,5 @@
-# applicationKey
-Xamarin.Forms - Azure Mobile App Mobile Key Sample
+# applicationKey Azure Mobile App
+You can set an application key for your Azure Mobile App like Azure Mobile Services.
 
 ### 1. Open Application Settings on Azure Mobile Application
 
@@ -8,9 +8,9 @@ Xamarin.Forms - Azure Mobile App Mobile Key Sample
 
 ### 2. Scroll down to *App Settings* Add these two lines.
 
-| Definiiton    | Value         |
+| Definition    | Value         |
 | ------------- |:-------------:|
-| zumo-api-key  | *TYPE YOUR API KEY* |
+| zumo-api-key | *TYPE YOUR API KEY* |
 | MS_SkipVersionCheck    | True      |
 
 ![alt text][logo2]
@@ -31,15 +31,20 @@ Here is the file => [validateApiKey.js](/validateApiKey.js)
 
 ### 6. Update your API script as,
 
-[sampleAPI.js](/sampleAPI.js)
+[sampleAPI.js](/sampleAPI.js) *AND*
 [sampleAPI.json](/sampleAPI.json)
+
+Do not forget to change permissions to "Anonymous"
 
 ### 6. Update your Table script as,
 
-[sampleTable.js](/sampleTable.js)
+[sampleTable.js](/sampleTable.js) *AND*
 [sampleTable.json](/sampleTable.json)
 
+Do not forget to change permissions to "Anonymous"
+
 ### 7. Done!
+
 
 
 
