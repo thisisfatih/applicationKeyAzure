@@ -27,8 +27,19 @@ Xamarin.Forms - Azure Mobile App Mobile Key Sample
 
 ### 6. Name your file as *validateApiKey.js*
 
-https://github.com/thisisfatih/applicationKey/blob/master/validateApiKey.js
 Here is the file => [validateApiKey.js](/validateApiKey.js)
+
+### 6. Update your API script as,
+
+[sampleAPI.js](/sampleAPI.js)
+[sampleAPI.json](/sampleAPI.json)
+
+### 6. Update your Table script as,
+
+[sampleTable.js](/sampleTable.js)
+[sampleTable.json](/sampleTable.json)
+
+### 7. Done!
 
 
 
