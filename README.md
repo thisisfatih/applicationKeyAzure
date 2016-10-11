@@ -45,6 +45,16 @@ Do not forget to change permissions to "Anonymous"
 
 ### 7. Done!
 
+Do not forget to add header while calling Azure Mobile/Web App.
+
+![alt text9][logo]
+[logo9]: https://github.com/thisisfatih/applicationKey/blob/master/client.PNG "Logo Title Text 2"
+
+![alt text8][logo]
+[logo8]: https://github.com/thisisfatih/applicationKey/blob/master/header.PNG "Logo Title Text 2"
+
+
+
 
 
 
