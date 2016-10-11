@@ -27,7 +27,7 @@ You can set an application key for your Azure Mobile App like Azure Mobile Servi
 
 ### 6. Name your file as *validateApiKey.js*
 
-Here is the file => [validateApiKey.js](/validateApiKey.js)
+[validateApiKey.js](/validateApiKey.js)
 
 ### 6. Update your API script as,
 
