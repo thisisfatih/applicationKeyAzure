@@ -1,7 +1,6 @@
 // ----------------------------------------------------------------------------
 // Copyright (c) 2015 Microsoft Corporation. All rights reserved.
 // ----------------------------------------------------------------------------
-
 module.exports = function (req, res, next) {
     // Validate zumo-api-key header against environment variable.
     // The header could also be validated against config setting, etc
