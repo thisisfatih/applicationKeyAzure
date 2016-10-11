@@ -1,19 +1,17 @@
 {
-  "softDelete" : true,
-  "autoIncrement": false,
-  "insert": {
+  "get": {
     "access": "anonymous"
   },
-  "update": {
+  "post": {
+    "access": "anonymous"
+  },
+  "put": {
+    "access": "anonymous"
+  },
+  "patch": {
     "access": "anonymous"
   },
   "delete": {
-    "access": "anonymous"
-  },
-  "read": {
-    "access": "anonymous"
-  },
-  "undelete": {
     "access": "anonymous"
   }
 }
