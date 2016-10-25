@@ -53,7 +53,9 @@ Do not forget to add header while calling Azure Mobile/Web App.
 ![alt text][logo8]
 [logo8]: https://github.com/thisisfatih/applicationKey/blob/master/header.PNG "5"
 
+ps. Feel free to ask questions via "Issues".
 
+thisisfatih.
 
 
 
