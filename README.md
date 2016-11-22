@@ -57,26 +57,21 @@ await uTable.InsertAsync(n);
 **If you are using Microsoft.Azure.Mobile.Client
 ```
 MobileServiceClient client = new MobileServiceClient(keys.mobileServiceAdress, new AppKeyHandler());
-                IMobileServiceTable<notifications> uTable = client.GetTable<notifications>();
-                await uTable.InsertAsync(n);
+IMobileServiceTable<notifications> uTable = client.GetTable<notifications>();
+await uTable.InsertAsync(n);
 ```
 
 
 ```
 public class AppKeyHandler : DelegatingHandler
-    {
-        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
-        {
-            request.Headers.Add("zumo-api-key", keys.mobileServiceKey);
-            return base.SendAsync(request, cancellationToken);
-        }
-    }
+{
+  protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+  {
+    request.Headers.Add("zumo-api-key", keys.mobileServiceKey);
+    return base.SendAsync(request, cancellationToken);
+  }
+}
 ```
-![alt text][logo9]
-[logo9]: https://github.com/thisisfatih/applicationKey/blob/master/client.PNG "4"
-
-![alt text][logo8]
-[logo8]: https://github.com/thisisfatih/applicationKey/blob/master/header.PNG "5"
 
 ps. Feel free to ask questions via "Issues".
 
