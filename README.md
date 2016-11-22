@@ -47,6 +47,31 @@ Do not forget to change permissions to "Anonymous"
 
 Do not forget to add header while calling Azure Mobile/Web App.
 
+**If you are using WindowsAzure.MobileServices
+```
+MobileServiceClient client = new MobileServiceClient(keys.mobileServiceAdress, keys.appSecret, new AppKeyHandler());
+IMobileServiceTable<notifications> uTable = client.GetTable<notifications>();
+await uTable.InsertAsync(n);
+```
+
+**If you are using Microsoft.Azure.Mobile.Client
+```
+MobileServiceClient client = new MobileServiceClient(keys.mobileServiceAdress, new AppKeyHandler());
+                IMobileServiceTable<notifications> uTable = client.GetTable<notifications>();
+                await uTable.InsertAsync(n);
+```
+
+
+```
+public class AppKeyHandler : DelegatingHandler
+    {
+        protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+        {
+            request.Headers.Add("zumo-api-key", keys.mobileServiceKey);
+            return base.SendAsync(request, cancellationToken);
+        }
+    }
+```
 ![alt text][logo9]
 [logo9]: https://github.com/thisisfatih/applicationKey/blob/master/client.PNG "4"
 
